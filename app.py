@@ -5,8 +5,6 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer, pipe
 import re
 import gdown
 
-url = "https://drive.google.com/drive/folders/15uNXeRBIhVvZJIhL4yTw4IsStMhUaaxl"
-gdown.download_folder(url)
 
 app = FastAPI()
 
