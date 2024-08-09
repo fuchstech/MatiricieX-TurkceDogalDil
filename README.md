@@ -9,4 +9,4 @@ conda activate matiricieX
 ```
 pip install -r requirements.txt
 ```
-[![Videoyu izleyin](video.mp4)](video.mp4)
+[![Demo Video](video.mp4)](video.mp4)
