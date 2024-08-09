@@ -3,8 +3,13 @@ from fastapi import FastAPI
 from pydantic import BaseModel, Field
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, pipeline
 import re
+import gdown
+
+url = "https://drive.google.com/drive/folders/15uNXeRBIhVvZJIhL4yTw4IsStMhUaaxl"
+gdown.download_folder(url)
 
 app = FastAPI()
+
 
 class Item(BaseModel):
     text: str = Field(..., example="Entity X'in müşteri hizmetleri hızlı ve etkili. Entity Y'nin ürün kalitesi çok kötü.")
