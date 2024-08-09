@@ -1,5 +1,6 @@
 gdown
 torch
+tqdm
 transformers
 scikit-learn
 pandas
