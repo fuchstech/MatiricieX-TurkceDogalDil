@@ -3,7 +3,6 @@ from fastapi import FastAPI
 from pydantic import BaseModel, Field
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, pipeline
 import re
-import gdown
 
 
 app = FastAPI()
@@ -13,8 +12,8 @@ class Item(BaseModel):
     text: str = Field(..., example="Entity X'in müşteri hizmetleri hızlı ve etkili. Entity Y'nin ürün kalitesi çok kötü.")
 
 # Model ve Tokenizer'ı yükleme
-model_path = "./sentiment_model"
-tokenizer_path = "./sentiment_tokenizer"
+model_path = "sentiment\sentiment_model"
+tokenizer_path = "sentiment\sentiment_tokenizer"
 
 model = AutoModelForSequenceClassification.from_pretrained(model_path)
 tokenizer = AutoTokenizer.from_pretrained(tokenizer_path)
