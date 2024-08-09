@@ -9,4 +9,8 @@ conda activate matiricieX
 ```
 pip install -r requirements.txt
 ```
+```
+python download_dataset.py
+python app.py
+```
 [![Demo Video](video.mp4)](video.mp4)
